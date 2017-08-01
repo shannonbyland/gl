@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const About = () => (
-
+  <h1>About</h1>
 )
 
 

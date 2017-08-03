@@ -11,6 +11,10 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      {/* <Route path="/clients" component={Clients} />
+      <Route path="/gallery" component={Gallery} />
+      <Route path="/services" component={Services} />
+      <Route path="/supporters" component={Supporters} /> */}
       <Route component={NoMatch} />
     </Switch>
   </div>

@@ -9,13 +9,13 @@ import Supporters from './components/Supporters';
 import Navbar from './components/Navbar';
 import Auth from './components/Auth';
 import Dashboard from './components/Dashboard';
-import FetchUser from './components/FetchUser';
+//import FetchUser from './components/FetchUser';
 import NoMatch from './components/NoMatch';
 
 const App = () => (
   <div>
     <Navbar />
-    <FetchUser>
+   {/* <FetchUser> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/register" render={ (props) => <Auth {...props} title="Register" /> } />
@@ -28,7 +28,7 @@ const App = () => (
         <Route path="/supporters" component={Supporters} />
         <Route component={NoMatch} />
       </Switch>
-    </FetchUser>
+    {/* </FetchUser> */}
   </div>
 )
 
